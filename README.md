@@ -67,8 +67,6 @@ src
 
 - I tried 11 times to buy ETH with my cards, but my bank declined each attempt haha. The banks in my country are bad guys! haha.
 
-## Video
-
 ## TO-DO for the future
 
 - [ ] E2E tests, definitely needed.
