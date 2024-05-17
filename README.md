@@ -1,6 +1,6 @@
 Welcome to **Otim Bets** — Connect your wallet and start playing today!
 
-<img src="https://raw.githubusercontent.com/carlosvq/juniorvillegas.com/main/public/otim-bets.svg" style="max-height: 160px;">
+<img height="160" src="https://raw.githubusercontent.com/carlosvq/juniorvillegas.com/main/public/otim-bets.svg">
 
 <div style="margin-top: 32px">
 
