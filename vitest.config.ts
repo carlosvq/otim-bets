@@ -6,7 +6,6 @@ import viteConfig from "./vite.config";
 export default mergeConfig(
   viteConfig,
   defineConfig({
-    assetsInclude: ["/sb-preview/runtime.js"],
     test: {
       clearMocks: true,
       deps: {
@@ -15,6 +14,7 @@ export default mergeConfig(
       globals: true,
       environment: "jsdom",
       includeSource: ["src/**/*.{js,ts}"],
+      setupFiles: ["./vitest.setup.ts"],
     },
   }),
 );

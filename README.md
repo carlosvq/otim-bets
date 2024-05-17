@@ -70,6 +70,7 @@ src
 ## TO-DO for the future
 
 - [ ] E2E tests, definitely needed.
+- [ ] More unit tests for rest components.
 - [ ] Add a more optimistic UI, there are set of good opportunities to implement.
 - [ ] More robust unit tests for some components.
 - [ ] Add advanced animations to make the app more engaging.

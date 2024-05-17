@@ -7,7 +7,7 @@ import { X } from "lucide-react";
 
 import { alertStyles, childrenStyles, messageStyles } from "./alert.styles";
 
-interface AlertProps
+export interface AlertProps
   extends VariantProps<typeof alertStyles>,
     BaseComponentProps {
   className?: string;
