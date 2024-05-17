@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Galano Grotesque Font";
+  src: url("https://storage.googleapis.com/vq_static/static/fonts/GalanoGrotesque.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Galano Grotesque Font";
+  src: url("https://storage.googleapis.com/vq_static/static/fonts/GalanoGrotesqueItalic.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Galano Grotesque Font";
+  src: url("https://storage.googleapis.com/vq_static/static/fonts/GalanoGrotesqueMedium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Galano Grotesque Font";
+  src: url("https://storage.googleapis.com/vq_static/static/fonts/GalanoGrotesqueMediumItalic.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Galano Grotesque Font";
+  src: url("https://storage.googleapis.com/vq_static/static/fonts/GalanoGrotesqueSemiBold.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Galano Grotesque Font";
+  src: url("https://storage.googleapis.com/vq_static/static/fonts/GalanoGrotesqueSemiBoldItalic.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Galano Grotesque Font";
+  src: url("https://storage.googleapis.com/vq_static/static/fonts/GalanoGrotesqueBold.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Galano Grotesque Font";
+  src: url("https://storage.googleapis.com/vq_static/static/fonts/GalanoGrotesqueBoldItalic.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96.5%;
+    --foreground: 0 0% 10.59%;
+
+    --ring: 176 70% 30%;
+
+    --popover: 0 0% 98.43%;
+    --popover-foreground: 0 0% 10.59%;
+    --popover-border: 0 0% 92.5%;
+
+    --primary: 0 0% 98.43%;
+    --primary-foreground: 203 21% 12%;
+    --primary-border: 0 0% 92.5%;
+
+    --primary-dark: 203 21% 12%;
+
+    --secondary: 0 0% 93%;
+    --secondary-foreground: 240 2.08% 18.82%;
+    --secondary-border: 0 0% 87.843%;
+
+    --tertiary: 240 9.52% 91.76%;
+    --tertiary-foreground: 240 1.08% 36.47%;
+    --tertiary-border: 0 0% 83.137%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0 90%;
+
+    --ring: 176 70% 30%;
+
+    --popover: 225 8.33% 9.41%;
+    --popover-foreground: 0 0 100%;
+    --popover-border: 225 7.55% 20.78%;
+
+    --primary: 210 6.25% 6.27%;
+    --primary-foreground: 0 0% 92.5%;
+    --primary-border: 230 7.5% 15.69%;
+
+    --primary-dark: 0 0% 4%;
+
+    --secondary: 216 8.77% 11.18%;
+    --secondary-foreground: 220 5.66% 89.61%;
+    --secondary-border: 230 8.11% 14.51%;
+
+    --tertiary: 225 11.43% 13.73%;
+    --tertiary-foreground: 225 1.92% 59.22%;
+    --tertiary-border: 222.86 7.69% 17.84%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+    color: hsl(var(--foreground));
+    font-size: 100%;
+  }
+}
+
+html {
+  font-size: inherit;
+  scroll-behavior: smooth;
+}
+
+.bg-wallpaper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  pointer-events: none;
+  opacity: 0.5;
+  background: radial-gradient(
+    50% 50% at 50% -20%,
+    rgba(255, 99, 99, 0.08) 0,
+    hsla(0, 100%, 73%, 0.04) 50.5%,
+    rgba(90, 23, 177, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: clamp(640px, calc(100vw * 1.586 + 45.31px), 1600px);
+}
